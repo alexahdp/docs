@@ -39,6 +39,8 @@
     {
       "group": "Essentials",
       "pages": [
+        "essentials/crafting-tests",
+        "essentials/assignments",
         "essentials/roles-and-permissions"
       ]
     }
