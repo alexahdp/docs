@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Testsplatform docs",
   "logo": {
-    "dark": "https://testsplatform.com/assets/icons/Logo.svg",
-    "light": "https://testsplatform.com/assets/icons/Logo.svg"
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -25,26 +25,32 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
-  "tabs": [
-  ],
-  "anchors": [
-  ],
+  "tabs": [],
+  "anchors": [],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": [
-        "introduction"
-      ]
+      "pages": ["introduction"]
     },
     {
       "group": "Essentials",
       "pages": [
-        "essentials/crafting-tests",
+        "essentials/personal-account",
         "essentials/assignments",
-        "essentials/roles-and-permissions"
+        "essentials/roles-and-permissions",
+        "essentials/edit-profile"
+      ]
+    },
+    {
+      "group": "Tests",
+      "icon": "list-check",
+      "pages": [
+        "essentials/crafting-tests",
+        "essentials/tests-settings",
+        "essentials/invites",
+        "essentials/rich-editor"
       ]
     }
   ],
-  "footerSocials": {
-  }
+  "footerSocials": {}
 }
