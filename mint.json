@@ -38,7 +38,8 @@
         "essentials/personal-account",
         "essentials/assignments",
         "essentials/roles-and-permissions",
-        "essentials/edit-profile"
+        "essentials/edit-profile",
+        "essentials/ai-assistant"
       ]
     },
     {
