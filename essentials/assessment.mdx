@@ -1,0 +1,26 @@
+---
+title: 'Assessments'
+description: 'Passing tests and assignments'
+---
+
+An `Assessment` is the process and result of taking a test. When a user starts a test, an assessment is created.
+Each answer is saved to the assessment as the user progresses. When the user finishes the test, the assessment is completed, and the result is calculated.
+
+During the assessment, the user can skip questions, move forward and backward, and change answers.
+If there is a time limit, the user will see a timer during the test. When the timer reaches 0, the user will be redirected to the
+test completion page and won't be able to answer questions or update their assessment.
+The timer continues even if the user refreshes the page or closes and reopens it.
+The user can finish the test before the time limit expires.
+
+If the user doesn't complete the test by clicking the Finish button, the test will be automatically submitted after 3 hours.
+
+Users can mark questions for review and see the list of marked questions after finishing the test.
+
+Users can view their assessments in the My assessments section.
+
+Depending on the test settings, the user can see the following information after passing the test:
+ - **All** - all questions, answers, explanations, and statistics
+ - **All without explanations** - all questions, answers, and statistics (without explanations)
+ - **Correctness and statistics** - questions, answers, correctness, and statistics
+ - **Statistics** - only statistics, his score, and passed or failed status
+ - **Nothing** - nothing. User event will not know his score, passed or failed.
