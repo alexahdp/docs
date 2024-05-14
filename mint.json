@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Testsplatform docs",
   "logo": {
-    "dark": "https://testsplatform.com/assets/icons/Logo.svg",
-    "light": "https://testsplatform.com/assets/icons/Logo.svg"
+    "dark": "/logo/testsplatform-logo-dark.svg",
+    "light": "/logo/testsplatform-logo-light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -23,28 +23,33 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://testsplatform.com"
   },
-  "tabs": [
-  ],
-  "anchors": [
-  ],
+  "tabs": [],
+  "anchors": [],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": [
-        "introduction"
-      ]
+      "pages": ["introduction"]
     },
     {
       "group": "Essentials",
       "pages": [
         "essentials/crafting-tests",
+        "essentials/published-tests",
+        "essentials/assessment",
+
         "essentials/assignments",
-        "essentials/roles-and-permissions"
+        
+        "essentials/organizations"
+      ]
+    },
+    {
+      "group": "Additional",
+      "pages": [
+        "essentials/rich-editor"
       ]
     }
   ],
-  "footerSocials": {
-  }
+  "footerSocials": {}
 }
