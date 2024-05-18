@@ -47,7 +47,8 @@
     {
       "group": "Additional",
       "pages": [
-        "essentials/rich-editor"
+        "essentials/rich-editor",
+        "essentials/ai-assistant"
       ]
     }
   ],
