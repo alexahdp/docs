@@ -56,5 +56,10 @@
       ]
     }
   ],
-  "footerSocials": {}
+  "footerSocials": {},
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-Z1YHVCLK0Q"
+    }
+  }
 }
