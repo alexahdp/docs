@@ -12,20 +12,24 @@ In the organization settings page, you can configure the following settings:
  - url (domain)
 
 #### Invitations
-To join an organization, a user needs to receive an invitation from an organization administrator.
+To join an organization, a user needs to receive an invitation from the organization's administrator.
 After receiving an invitation, the user can accept it and join the organization.
-In the Invites tab of the organization settings, you can view all sent invitations and their statuses. If you send an invitation to the wrong email, you can revoke it.
+In the Invites tab of the organization settings, you can view all sent invitations and their statuses. If you sent an invitation to the wrong email, you can revoke it.
 
 ### Roles and permissions
 Organizations have users with different roles and permissions. Here are the roles and their differences:
 
 #### Key roles
- - **Member**: A basic user who can participate in assignments, take free-to-pass tests, and create their own tests.
- - **Manager**: Managers oversee a specific group. They can create assignments and assign them to users in their groups.
- Managers can also add users to their groups. Note: a user can be a manager in one group and a member in another group.
- - **Admin**: Admins can create groups, assign other admins and managers to groups, and create assignments for the entire organization.
- - **Owner**: There is only one owner, who is the creator of the organization. The owner manages the subscription plan and can disable the organization.
+**Organization roles:**
+ - **Member**: these users can create their tests, pass other tests, but they can't manage users: send invitations, block other users, create groups;
+ - **Admin**: admins can create groups, assign other admins and managers to groups, and create assignments for the entire organization;
+ - **Owner**: there is only one owner - the creator of the organization. The owner manages has all admin's privileges, and also he manages the subscription plan and can disable the organization;
+
+**Roles in groups:**  
+Groups have internal roles model. For example, an admin of the organization can be a member in some group or a user can be a manager in one group and a member in another group.
+ - **Member**: users with these roles can only receive assignments for passing tests. They can't create assignments for other users in this group.
+ - **Manager**: managers oversee the group. They can create assignments and assign them to users in the group. Managers can also add users to their groups.
 
 #### Groups
-Groups allow you to organize users and manage their assignments more effectively.
+Groups allow you to organize users to manage their assignments more effectively.
 For example, you can create groups for developers, managers, and testers. Each group can have a manager who can assign tests for passing and monitor results.

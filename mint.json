@@ -33,6 +33,10 @@
       "pages": ["introduction"]
     },
     {
+      "group": "Videos",
+      "pages": ["introduction.video"]
+    },
+    {
       "group": "Essentials",
       "pages": [
         "essentials/crafting-tests",
@@ -47,8 +51,8 @@
     {
       "group": "Additional",
       "pages": [
-        "essentials/rich-editor",
-        "essentials/ai-assistant"
+        "essentials/ai-assistant",
+        "essentials/rich-editor"
       ]
     }
   ],
