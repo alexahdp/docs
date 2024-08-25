@@ -23,14 +23,18 @@ In an organization, you have more control over test visibility. In the settings 
  - `Public`: These tests are visible to users outside of your organization, even those not signed up on the tests platform.
  This setting also includes the "invitation required" checkbox, which works the same as for a personal account.
 
+
 ### Settings panel
 
-#### Topics
-You can assign a topic to your test. Topics help group and filter tests.
+### Invitation required
+Allows to manage visibility of a public test. When this option is chosen, only users with an invite may start passing a published test.  
 
 #### Tags
 You can attach tags to your tests to make them more specific.  
-Tags are essential for further categorizing tests. 
+Tags are essential for further categorizing tests.  
+
+#### Topics
+You can assign a topic to your test. Topics help group and filter tests.
 
 #### Url
 You can set a human-readable URL for your test. A full URL link consists of three parts:
@@ -53,12 +57,13 @@ You can control what a user sees after they pass the test. Below is a table show
 #### Time limit
 You can set a time limit for taking the test. The value is in minutes. A value of 0 (default) means there is no time limit. 
 If there is a time limit, the user will see a timer during the test. When the timer reaches 0, the user will be redirected to the test completion page
-and won't be able to answer questions or update their assessment. The timer continues even if the user refreshes the page or closes and reopens it.
+and won't be able to answer questions or update their assessment. The timer continues even if the user refreshes the page or closes and reopens it.  
+Related setting: "Pausable", see below.
 
 #### Passing threshold
 You can set a passing threshold for the test, expressed as a percentage. If a user's score is above the threshold, the test is marked as passed. If below, it is marked as failed.
 
-#### Number of questions in assessment
+#### Number of questions in a test
 To avoid having the same questions in every test, you can set a smaller number for `Number of questions in assessment` than the total number of questions.
 This way, each time a user takes the test, they will receive a random subset of questions. For example, if your test has 100 questions and you set the value to 25,
 each user will see 25 random questions out of 100.
@@ -69,6 +74,15 @@ If enabled, the order of questions will be different each time the test is taken
 #### Random options order
 Similar to random question order, this setting shuffles the answer options within each question each time the test is taken.
 Be careful with this setting if your options are labeled (A, B, etc.) as explanations won't update with the shuffling.
+
+#### Pausable
+When this setting is active, a user can pause a test and it's timer will be stopped. User may leave the page and get back after a long time and he will
+be able to resume the test and continue answer questions.
+
+#### Learning mode
+This setting allows to immediately show answer for the questions in a test. For example, you want to use a test in learning purposes.
+You create questions, add explanations and then when a user answers a question and clicks "next", he will immediately see is his answer correct or now, which answer
+is correct and why (with explanation).
 
 
 ### Questions
