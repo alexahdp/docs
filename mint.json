@@ -25,35 +25,70 @@
     "name": "Dashboard",
     "url": "https://testsplatform.com"
   },
-  "tabs": [],
+  "tabs": [
+    {
+      "name": "en",
+      "url": "/en"
+    },
+    {
+      "name": "ru",
+      "url": "/ru"
+    }
+  ],
+  "versions": ["en", "ru"],
   "anchors": [],
+  
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction"]
+      "version": "en",
+      "pages": ["en/introduction"]
     },
     {
       "group": "Videos",
-      "pages": ["introduction.video"]
+      "version": "en",
+      "pages": ["en/introduction.video"]
     },
     {
       "group": "Essentials",
+      "version": "en",
       "pages": [
-        "essentials/crafting-tests",
-        "essentials/test-links",
-
-        "essentials/assessment",
-
-        "essentials/assignments",
-        
-        "essentials/organizations"
+        "en/crafting-tests",
+        "en/test-links",
+        "en/assessment",
+        "en/assignments",
+        "en/organizations"
       ]
     },
     {
       "group": "Additional",
+      "version": "en",
       "pages": [
-        "essentials/ai-assistant",
-        "essentials/rich-editor"
+        "en/ai-assistant",
+        "en/rich-editor"
+      ]
+    },
+
+
+    {
+      "group": "Начало работы",
+      "version": "ru",
+      "pages": ["ru/introduction"]
+    },
+    {
+      "group": "Основное",
+      "version": "ru",
+      "pages": [
+        "ru/crafting-tests",
+        "ru/test-links",
+        "ru/assessments"
+      ]
+    },
+    {
+      "group": "Дополнительно",
+      "version": "ru",
+      "pages": [
+        "ru/ai-assistant"
       ]
     }
   ],
