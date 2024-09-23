@@ -10,6 +10,12 @@ When you feel your test is ready, you can publish it. Only after publishing will
 
 A `Published test` is a snapshot of your test at a certain point in time. After publishing, you can still update your test, but these updates won't be visible until you publish it again.
 
+A `Published test` is a snapshot of a test at the moment of publishing. You can share a link to a public test with anyone.
+If a user takes the test via your link and does not have an account on Testsplatform, they can pass the test, but to see their results they will need to create an account.
+A cookie mechanism is used to bind the assessment with the user. If the user clears their cookies before creating an account, the information about taking the test will be lost.
+
+You cannot see users and their results from tests shared via a link.
+
 **Personal account**
 When you publish a test, it becomes visible via a direct link. You can control who can take the test by setting the *invitation required* checkbox in the test's settings.
 If checked, only users with an invite can take the test. If not checked, anyone with the direct link can take the test.
@@ -26,64 +32,12 @@ In an organization, you have more control over test visibility. In the settings 
 
 ### Settings panel
 
-### Invitation required
-Allows to manage visibility of a public test. When this option is chosen, only users with an invite may start passing a published test.  
-
 #### Tags
 You can attach tags to your tests to make them more specific.  
 Tags are essential for further categorizing tests.  
 
 #### Topics
 You can assign a topic to your test. Topics help group and filter tests.
-
-#### Url
-You can set a human-readable URL for your test. A full URL link consists of three parts:
- - testsplatform.com domain
- - profile URL (or organization domain if the test belongs to an organization)
- - test's URL
-
-**Be careful if you change parts of your test URL, including your profile's URL in your account settings. After changing the URL, the test will not be available at the previous URL**
-
-#### Answers and results visibility
-You can control what a user sees after they pass the test. Below is a table showing what users will see for each setting value:
-
-|                 | All   | All without explanations | Correctness and statistics | Statistics | Nothing |
-| ---             | ---   |           ---            |             ---            |     ---    |    ---  |
-| Statistics      |  +    |             +            |               +            |      +     |    -    |
-| Correctness     |  +    |             +            |               +            |      -     |    -    |
-| Correct answers |  +    |             +            |               -            |      -     |    -    |
-| Explanations    |  +    |             -            |               -            |      -     |    -    |
-
-#### Time limit
-You can set a time limit for taking the test. The value is in minutes. A value of 0 (default) means there is no time limit. 
-If there is a time limit, the user will see a timer during the test. When the timer reaches 0, the user will be redirected to the test completion page
-and won't be able to answer questions or update their assessment. The timer continues even if the user refreshes the page or closes and reopens it.  
-Related setting: "Pausable", see below.
-
-#### Passing threshold
-You can set a passing threshold for the test, expressed as a percentage. If a user's score is above the threshold, the test is marked as passed. If below, it is marked as failed.
-
-#### Number of questions in a test
-To avoid having the same questions in every test, you can set a smaller number for `Number of questions in assessment` than the total number of questions.
-This way, each time a user takes the test, they will receive a random subset of questions. For example, if your test has 100 questions and you set the value to 25,
-each user will see 25 random questions out of 100.
-
-#### Random questions order
-If enabled, the order of questions will be different each time the test is taken. This can help prevent cheating.
-​
-#### Random options order
-Similar to random question order, this setting shuffles the answer options within each question each time the test is taken.
-Be careful with this setting if your options are labeled (A, B, etc.) as explanations won't update with the shuffling.
-
-#### Pausable
-When this setting is active, a user can pause a test and it's timer will be stopped. User may leave the page and get back after a long time and he will
-be able to resume the test and continue answer questions.
-
-#### Learning mode
-This setting allows to immediately show answer for the questions in a test. For example, you want to use a test in learning purposes.
-You create questions, add explanations and then when a user answers a question and clicks "next", he will immediately see is his answer correct or now, which answer
-is correct and why (with explanation).
-
 
 ### Questions
 A question is a building block of tests. Testsplatform allows you to create the following types of questions:
@@ -99,3 +53,12 @@ For instance, you may find that the user excels in Algebra but struggles with Ge
 Tests can be used for educational purposes. If you want to provide explanations for each question, you can add them in the question settings.
 Explanations are shown to the user after they complete the test. They help the user understand why their answers were correct or incorrect.
 You can also automatically generate explanations for your questions using the AI-Assistant.
+
+#### Statistics
+For a published test, you can view common statistics, which include:
+ - average results  
+ - best result  
+ - worst result  
+These statistics include all attempts (via invites, links, etc.).
+
+For sharing tests you can use links. Look at the [test links](/essentials/test-links) page for more information.

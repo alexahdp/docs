@@ -1,0 +1,83 @@
+---
+title: 'Sharing tests'
+description: 'How to share your tests and obtain results'
+---
+
+Probably, you create tests to share them with your students, colleagues, or friends. Testsplatform provides a convenient way to share tests - links. Links allow you to create a test and share it with different configurations.
+
+Examples of use cases:
+1. A link to a test with learning mode "On". In this case users will see correct answers and explanations immediately after answering a question. It will help them to learn new material.
+2. A link to a test with a time limit and without answers and explanations will help you to examine knowledge of your students.
+
+Important: You can create a link only after publishing the test.
+
+There are 2 main cases that we may consider about sharing tests:
+1. You want to share a test with anyone in the internet and you don't care about their results (you may be interested only in statistics).
+2. You want to share a test with someone and you want to see the results of this person.
+
+### Case 1
+Let's consider first case. For implementing this case you need to create a link with selected checkbox 'Anonymous'.
+You can set other settings as you want, we will consider them later. After creating a link, you can share it in social networks, via messengers, etc. Users who have the link will be able to pass the test and see their results (if you allow that in the settings).
+
+### Case 2
+Now let's consider the second case. For implementing this case you need to create a link and do not select 'Anonymous' checkbox. In that case users who pass the test will not be able to see thair results, but you will see them. You can create many individueal links (even with one-time usage) or you can create a link for a group of people (for example, for a class).
+
+
+### Link settings
+When you create a link, you can set some settings for it. Let's consider them:
+
+#### Url
+You can set a human-readable URL for your test. A full URL link consists of three parts:
+ - testsplatform.com domain
+ - profile URL (or organization domain if the test belongs to an organization)
+ - test's URL
+
+**Be careful if you change parts of your test URL, including your profile's URL in your account settings. After changing the URL, the test will not be available at the previous URL**
+
+Also, you can ignore this field and generate a short random URL. In many cases, it's more convenient.
+
+#### Usage limit
+If you want to limit the number of times a link can be used, you can set a usage limit. After the limit is reached, the link will be disabled and no one will be able to pass the test via this link.
+
+#### Passing threshold
+You can set a passing threshold for the test, expressed as a percentage. If a user's score is above the threshold, the test is marked as passed. If below, it is marked as failed.
+
+#### Time limit
+You can set a time limit for taking the test. The value is in minutes. A value of 0 (default) means there is no time limit. 
+If there is a time limit, the user will see a timer during the test. When the timer reaches 0, the user will be redirected to the test completion page
+and won't be able to answer questions or update their assessment. The timer continues even if the user refreshes the page or closes and reopens it.  
+Related setting: "Pausable", see below.
+
+#### Number of questions in a test
+To avoid having the same questions in every test, you can set a smaller number for `Number of questions in assessment` than the total number of questions.
+This way, each time a user takes the test, they will receive a random subset of questions. For example, if your test has 100 questions and you set the value to 25,
+each user will see 25 random questions out of 100.
+
+#### Random questions order
+If enabled, the order of questions will be different each time the test is taken. This can help prevent cheating.
+​
+#### Random options order
+Similar to random question order, this setting shuffles the answer options within each question each time the test is taken.
+Be careful with this setting if your options are labeled (A, B, etc.) as explanations won't update with the shuffling.
+
+#### Pausable
+When this setting is active, a user can pause a test and it's timer will be stopped. User may leave the page and get back after a long time and he will
+be able to resume the test and continue answer questions.
+
+#### Learning mode
+This setting allows to immediately show answer for the questions in a test. For example, you want to use a test in learning purposes.
+You create questions, add explanations and then when a user answers a question and clicks "next", he will immediately see is his answer correct or now, which answer
+is correct and why (with explanation).
+
+#### Answers and results visibility (available only for non-anonymous tests)
+You can control what a user sees after they pass the test. Below is a table showing what users will see for each setting value:
+
+|                 | All   | All without explanations | Correctness and statistics | Statistics | Nothing |
+| ---             | ---   |           ---            |             ---            |     ---    |    ---  |
+| Statistics      |  +    |             +            |               +            |      +     |    -    |
+| Correctness     |  +    |             +            |               +            |      -     |    -    |
+| Correct answers |  +    |             +            |               -            |      -     |    -    |
+| Explanations    |  +    |             -            |               -            |      -     |    -    |
+
+
+If you no longer want your test to be available, you can archive the links. Without active links, the test can not be taken. However, users who have already taken the test will still see it in their assessments and can view questions, answers, and explanations.
