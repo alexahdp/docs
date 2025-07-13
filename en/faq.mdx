@@ -1,0 +1,60 @@
+---
+title: 'Frequently Asked Questions'
+description: 'Answers to frequently asked questions about TestsPlatform'
+---
+
+<AccordionGroup>
+  <Accordion title="How to enable the feature that shows the correct answer immediately?">
+    This feature is called "Learning Mode". You can enable it when creating a test link. In this mode, after each answer, the user will see the correct answer.
+  </Accordion>
+
+  <Accordion title='How to add a "name" field before taking the test?'>
+    This feature is available when creating a test link. You need to select the option "Request name or email before the test". The system does not perform any content validation, so you can enter any value in the field (serial number, nickname, etc.).
+  </Accordion>
+
+  <Accordion title='Can I change the passing criteria for the test?'>
+    Yes, you can set this when creating a test link. In the "Passing Threshold" field, specify the percentage of correct answers required for the test to be considered passed. For example, if you set it to 50%, the test will be considered passed if the user answers correctly on 50% or more of the questions.
+  </Accordion>
+
+  <Accordion title='Can I change the order of questions in the test?'>
+    Yes, you can change the order of questions in the test in two ways:
+    1. On the test editing page, you can drag and drop questions to change their order.
+    2. You can set a random order of questions when creating a test link by selecting the "Random questions order" option. In this case, during each test attempt, questions will be displayed in a random order. Additionally, you can set the "Random options order" option to display answers in a random order as well.
+  </Accordion>
+
+  <Accordion title='Can I randomize the order of questions?'>
+    Yes, you can set a random order of questions when creating a test link by selecting the "Random questions order" option. In this case, during each test attempt, questions will be displayed in a random order. Additionally, you can set the "Random options order" option to display answers in a random order as well.
+  </Accordion>
+
+  <Accordion title='Can I protect the test from unauthorized access if the link is shared?'>
+    Yes, you can do this by deleting the test link on the test details page. After that, the link will become invalid, and no one will be able to take the test using that link.
+  </Accordion>
+
+  <Accordion title='Can I restrict test results visibility to only the author?'>
+    Yes, you can set the test results to be visible only to you. When creating a test link, select the option "Results available to" and choose "Author". In this case, the test results will only be accessible to you, and no one else will be able to see them.
+  </Accordion>
+
+  <Accordion title='Can I limit the time for taking the test?'>
+    Yes, you can set a time limit for taking the test. When creating a test link, specify a non-zero value in the "Time Limit" field. If set to zero, there will be no time limit. If the user does not complete the test within the allotted time, their answers will be automatically submitted, and the test will be considered completed.
+  </Accordion>
+
+  <Accordion title='How to restrict test access to specific users?'>
+    You control who can access the test by creating test links. You can create a link that is only accessible to the users you send it to.
+    There are additional settings that can help further restrict access to the test:
+    1. When creating a test link with results available to you, you can specify a minimum number of uses in the "Number of Uses" field. For example, if you set it to 1, the link will be available for one-time use only.
+    2. You can set a password for the test link. To do this, select the "Require Password" option when creating the test link and specify a value in the "Password" field. Users will need to enter this password to start the test.
+    You will need to send the password to the users you want to grant access to the test.
+  </Accordion>
+
+  <Accordion title='What if the user closes the test before completing it and does not click the "Submit Answers" button?'>
+    No worries, in this case, the user's answers will not be saved, and the test will automatically be completed after 3 hours.
+  </Accordion>
+
+  <Accordion title='Can I import a test from an existing PDF document?'>
+    Yes, you can import a test from a PDF document. To do this, go to the My Tests page (/my-tests), click "Create Test" -> "Import Questions". In the pop-up window, select the PDF file containing the questions. The system will automatically create a test with questions from the document. Please note that the formatting of the questions may not be perfect, and you may need to make some adjustments.
+
+    Additionally, you can take screenshots of questions and upload them through the AI assistant chat. On the test editing page, click on the "Create with AI" icon at the bottom of the screen. In the opened window, you can paste a screenshot of the question into the input field, and the system will attempt to recognize the text in the image and create a question.
+  </Accordion>
+</AccordionGroup>
+
+We are always happy to help you with your questions and issues. If you have any other questions, feel free to reach out to us via [chat](https://app.testsplatform.com/contact-us) or by email: [support@testsplatform.com](mailto:support@testsplatform.com)

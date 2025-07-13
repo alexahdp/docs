@@ -42,7 +42,10 @@
     {
       "group": "Get Started",
       "version": "en",
-      "pages": ["en/introduction"]
+      "pages": [
+        "en/introduction",
+        "en/faq"
+      ]
     },
     {
       "group": "Videos",
@@ -73,7 +76,10 @@
     {
       "group": "Начало работы",
       "version": "ru",
-      "pages": ["ru/introduction"]
+      "pages": [
+        "ru/introduction",
+        "ru/faq"
+      ]
     },
     {
       "group": "Основное",
